@@ -67,7 +67,7 @@ a:focus {
     margin-bottom: 0;
     font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 125%;
-    background-color: rgba(20,30,50,.5);
+    background-color: rgba(20,30,50,.5); /* #141ee2 */
 }
 
 .navbar-custom .navbar-brand {
@@ -209,8 +209,8 @@ a:focus {
 .btn-circle:hover i.animated {
     -webkit-animation-name: pulse;
     -moz-animation-name: pulse;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
+    -webkit-animation-duration: 1.7s;
+    -moz-animation-duration: 1.7s;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
@@ -224,8 +224,8 @@ a:focus {
     }
 
     50% {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
     }
 
     100% {
@@ -241,8 +241,8 @@ a:focus {
     }
 
     50% {
-        -moz-transform: scale(1.2);
-        transform: scale(1.2);
+        -moz-transform: scale(1.3);
+        transform: scale(1.3);
     }
 
     100% {
@@ -257,7 +257,7 @@ a:focus {
 }
 
 .content-section h2 {
-    color: #090918;
+    color: #222255;
 }
 
 @media(min-width:767px) {
@@ -443,9 +443,9 @@ body {
 /* EXPERIENCE BULLETS *****************************************/
 .x-point,
 .x-point:hover {
-    background: #f3f3f3;
+    /*background: #f3f3f3;*/
     border-radius: 10px;
-    color: #555;
+    color: #444;
     padding: 40px 3px;;
     margin: 40px 0;
     -webkit-transition: all .3s ease-in-out;
@@ -522,16 +522,16 @@ div.x-logo:hover {
 }
 @media (min-width: 768px) {     /* no hover stuff on mobile */
     .x-point {
-        background: #e3e3e3;
+        /*background: #e3e3e3;*/
         color: #888;
     }
     #cozi-logo {
-        background-image: url("../img/icons/cozi-white.png");
+        background-image: url("../img/icons/cozi-grey.png");
     }
     #cse-logo {
-        background-image: url("../img/icons/cse-white.png");
+        background-image: url("../img/icons/cse-grey.png");
     }
     #api-logo {
-        background-image: url("../img/icons/api-white.png");
+        background-image: url("../img/icons/api-grey.png");
     }
 }
