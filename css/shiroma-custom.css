@@ -144,7 +144,7 @@ a:focus {
     font-size: 18px;
 }
 
-@media(min-width:767px) {
+@media(min-width:769px) {
     .intro {
         background-attachment: fixed;
         height: 100%;
@@ -434,7 +434,7 @@ body {
 #banner-design {
   background-image: url("../img/bg/wet-metal-bg.jpg");
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .jumbo-banner {
     background-attachment: fixed;
   }
@@ -521,7 +521,7 @@ div.x-logo:hover {
         margin: 0;
     }
 }
-@media (min-width: 768px) {     /* no hover stuff on mobile */
+@media (min-width: 769px) {     /* no hover stuff on mobile */
     .x-point {
         color: #888;
     }
