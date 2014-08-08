@@ -318,7 +318,8 @@ footer {
     color: #ddd;
     font-family: 'Playfair Display', 'Georgia', serif;
     padding: 50px 0;
-    background: url(../img/bg/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/bg/intro-bg.jpg) no-repeat bottom center;
+    background-attachment: scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -415,6 +416,7 @@ body {
   background-color: #1b1f23;        /* fallback */
   background-position: 50% 50%;     /* center */
   background-repeat: no-repeat; 
+  background-attachment: scroll;
   background-size: cover;           /* scale to cover bg */
   webkit-background-size: cover;
   -moz-background-size: cover;
@@ -444,7 +446,6 @@ body {
 /* EXPERIENCE BULLETS *****************************************/
 .x-point,
 .x-point:hover {
-    /*background: #f3f3f3;*/
     border-radius: 10px;
     color: #444;
     padding: 40px 3px;;
@@ -473,7 +474,6 @@ body {
 }
 
 .x-point ul {
-    /*list-style: none;*/
     text-align: left;
     height: 5em;
 }
@@ -523,7 +523,6 @@ div.x-logo:hover {
 }
 @media (min-width: 768px) {     /* no hover stuff on mobile */
     .x-point {
-        /*background: #e3e3e3;*/
         color: #888;
     }
     #cozi-logo {
