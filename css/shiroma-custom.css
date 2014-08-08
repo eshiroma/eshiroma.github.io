@@ -318,9 +318,7 @@ footer {
     color: #ddd;
     font-family: 'Playfair Display', 'Georgia', serif;
     padding: 50px 0;
-    /*background: #090918;*/
     background: url(../img/bg/intro-bg.jpg) no-repeat bottom center scroll;
-    background-size: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -409,15 +407,18 @@ body {
 /* COVER/JUMOBTRON BACKGROUNDS ********************************/
 #banner-experience,
 #banner-design {
-  background-color: #1b1f23;          /* fallback */
-  background-position: 50% 50%;     /* center */
-  background-repeat: no-repeat; 
-  background-size: cover;            /* scale to cover bg */
-  -webkit-background-size: cover;
   color: #fff;
   height: 350px;
   padding-top: 150px;
   margin: 0px;
+
+  background-color: #1b1f23;        /* fallback */
+  background-position: 50% 50%;     /* center */
+  background-repeat: no-repeat; 
+  background-size: cover;           /* scale to cover bg */
+  webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 #banner-experience h1,
 #banner-design h1 {
