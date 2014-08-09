@@ -101,6 +101,7 @@ a:focus {
 .banner,
 footer {
     color: #fff;
+    width: 100%;
     background-color: #000;
     background-repeat: no-repeat; 
     background-attachment: scroll;
@@ -112,16 +113,22 @@ footer {
 
 .intro {
     display: table;
-    width: 100%;
     height: 100%;/*auto;*/
     padding: 100px 0;
     text-align: center;
     background: url(../img/bg/intro-bg.jpg) no-repeat bottom center scroll;
 }
-
+@media(min-width: 1921px) {
+    .intro {
+        background: url(../img/bg/intro-bg-large.jpg);
+        -webkit-background-size: 100% auto;
+        -moz-background-size: 100% auto;
+        background-size: 100% auto;
+    }
+}
 
 footer {
-    background: url(../img/bg/intro-bg.jpg);
+    background: url(../img/bg/intro-bg.jpg) bottom center;
     height: auto;
     padding: 50px 0;
 }
