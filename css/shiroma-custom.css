@@ -118,8 +118,13 @@ footer {
     text-align: center;
     background: url(../img/bg/intro-bg.jpg) no-repeat bottom center scroll;
 }
+footer {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    background: url(../img/bg/intro-bg.jpg) no-repeat scroll;
+    padding: 60px 0 20px 0;
+}
 @media(min-width: 1921px) {
-    .intro {
+    .intro, footer {
         background: url(../img/bg/intro-bg-large.jpg);
         -webkit-background-size: 100% auto;
         -moz-background-size: 100% auto;
@@ -127,12 +132,6 @@ footer {
     }
 }
 
-footer {
-    font-family: 'Playfair Display', 'Georgia', serif;
-    background: url(../img/bg/intro-bg.jpg) bottom center;
-    height: auto;
-    padding: 50px 0;
-}
 
 .intro .intro-body {
     display: table-cell;
