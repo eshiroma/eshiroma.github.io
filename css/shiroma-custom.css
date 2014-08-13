@@ -44,9 +44,7 @@ a:focus {
     color: #3adccd;
 }
 
-.light {
-    font-weight: 400;
-}
+.light { font-weight: 400 }
 
 .navbar-custom {
     margin-bottom: 0;
@@ -55,9 +53,7 @@ a:focus {
     background-color: rgba(20,30,50,.5); /* #141ee2 */
 }
 
-.navbar-custom .navbar-brand {
-    font-weight: 500;
-}
+.navbar-custom .navbar-brand { font-weight: 500 }
 
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
@@ -65,13 +61,9 @@ a:focus {
     color: #fff;
 }
 
-.navbar-toggle i {  /* for visibility */
-    color: #fff;
-}
+.navbar-toggle i { color: #fff }
 
-.navbar-custom a {
-    color: #fff;
-}
+.navbar-custom a { color: #fff }
 
 .navbar-custom .nav li.active,
 .navbar-custom .nav li a:hover,
