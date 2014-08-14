@@ -114,7 +114,8 @@ footer {
 footer {
     font-family: 'Playfair Display', 'Georgia', serif;
     background: url(../img/bg/intro-bg.jpg) no-repeat scroll;
-    padding: 30px 0 20px 0;
+    padding: 25px 0 1px 0;
+    margin-bottom: 0px;
 }
 @media(min-width: 1921px) {
     .intro, footer {
@@ -182,8 +183,13 @@ footer {
 }
 
 footer .btn-circle {
-    padding: 7px 8px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 28px;
+    padding: 5px 6px;
 }
+footer a { color: #fff }
 
 .btn-circle i.animated {
     -webkit-transition-property: -webkit-transform;
