@@ -50,7 +50,7 @@ a:focus {
     margin-bottom: 0;
     font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 125%;
-    background-color: rgba(20,30,50,.5); /* #141ee2 */
+    background-color: rgba(20,30,50,.7); /* #141ee2 */
 }
 
 .navbar-custom .navbar-brand { font-weight: 500 }
@@ -65,6 +65,7 @@ a:focus {
 
 .navbar-custom a { color: #fff }
 
+/* selected nav area text "glow" */
 .navbar-custom .nav li.active,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus,
@@ -151,7 +152,7 @@ footer {
 
 #nav-signature {
     width: 140px;
-    margin-top: -12px;
+    margin-top: -10px;
     visibility: hidden;
 }
 .top-nav-collapse #nav-signature {
