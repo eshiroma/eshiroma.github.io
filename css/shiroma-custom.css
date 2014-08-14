@@ -114,7 +114,7 @@ footer {
 footer {
     font-family: 'Playfair Display', 'Georgia', serif;
     background: url(../img/bg/intro-bg.jpg) no-repeat scroll;
-    padding: 60px 0 20px 0;
+    padding: 30px 0 20px 0;
 }
 @media(min-width: 1921px) {
     .intro, footer {
@@ -179,6 +179,10 @@ footer {
     outline: 0;
     color: #fff;
     background: rgba(255,255,255,.25);
+}
+
+footer .btn-circle {
+    padding: 7px 8px;
 }
 
 .btn-circle i.animated {
@@ -264,10 +268,26 @@ footer {
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #16a095;
+    border: 1px solid #3adccd;
     outline: 0;
     color: #fff;
-    background-color: #16a095;
+    background-color: #3adccd;
+}
+
+ul.banner-social-buttons { margin-top: 0 }
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons { margin-top: 15px }
+}
+
+@media(max-width:767px) {
+    ul.banner-social-buttons li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons li:last-child { margin-bottom: 0 }
 }
 
 ::-moz-selection {
