@@ -411,12 +411,12 @@ div.x-logo:hover {
 
 /* custom backgrounds; icon changes whenever hover over whole card */
 #cozi-logo, .x-point:hover #cozi-logo { background-image: url("../img/icons/cozi-color.png");}
-#cse-logo, .x-point:hover #cse-logo { background-image: url("../img/icons/cse-color.png");}
+#google-logo, .x-point:hover #google-logo { background-image: url("../img/icons/google-g-color.png");}
 #api-logo, .x-point:hover #api-logo { background-image: url("../img/icons/api-color.png");}
 
 @media (min-width: 1200px) {     /* no hover stuff on mobile */
     .x-point { color: #888 }
     #cozi-logo { background-image: url("../img/icons/cozi-grey.png");}
-    #cse-logo { background-image: url("../img/icons/cse-grey.png");}
+    #google-logo { background-image: url("../img/icons/google-g-grey.png");}
     #api-logo { background-image: url("../img/icons/api-grey.png");
 }
