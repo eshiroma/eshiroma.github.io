@@ -403,9 +403,9 @@ div.x-logo:hover {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 70%;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
 /* custom backgrounds; icon changes whenever hover over whole card */
