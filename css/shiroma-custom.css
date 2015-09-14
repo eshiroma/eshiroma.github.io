@@ -333,9 +333,8 @@ body { webkit-tap-highlight-color: rgba(255,255,255,.2) }
 .highlight-opacity:hover {
   opacity: 1.0;
   filter:alpha(opacity=100);
-  -o-transition:.4s;
-  -ms-transition:.4s;
-  -moz-transition:.4s;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
   transition: 0.4s;
 }
 .highlight-opacity:hover { opacity:0.5 }
@@ -411,12 +410,12 @@ div.x-logo:hover {
 
 /* custom backgrounds; icon changes whenever hover over whole card */
 #cozi-logo, .x-point:hover #cozi-logo { background-image: url("../img/icons/cozi-color.png");}
-#google-logo, .x-point:hover #google-logo { background-image: url("../img/icons/google-g-color.png");}
+#google-logo, .x-point:hover #google-logo { background-image: url("../img/icons/google-color.png");}
 #api-logo, .x-point:hover #api-logo { background-image: url("../img/icons/api-color.png");}
 
 @media (min-width: 1200px) {     /* no hover stuff on mobile */
     .x-point { color: #888 }
     #cozi-logo { background-image: url("../img/icons/cozi-grey.png");}
-    #google-logo { background-image: url("../img/icons/google-g-grey.png");}
+    #google-logo { background-image: url("../img/icons/google-grey.png");}
     #api-logo { background-image: url("../img/icons/api-grey.png");
 }
