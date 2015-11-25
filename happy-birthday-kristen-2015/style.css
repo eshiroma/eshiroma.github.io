@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Asap";
+}
+
+#first-banner { background-image: url(img/color-water-show.jpg); }
+#second-banner { background-image: url(img/plane.jpg); }
+#third-banner { background-image: url(img/sushi.jpg); }
+#third-banner { background-image: url(img/swings.jpg); }
+#fourth-banner { background-image: url(img/matterhorn.jpg); }
+#fifth-banner { background-image: url(img/sushi.jpg); }
+
+.banner {
+    color: #fff;
+    height: 70vh;
+    text-align: center;
+    width: 100%;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+#first-banner {
+    height: 100vh;
+    text-align: center;
+}
+#lettering {
+    width: 45%;
+}
+
+.text {
+    max-width: 500px;
+    margin: auto;
+    padding: 4em 1.5em;
+}
+
+.text span {
+    color: #2af;
+    font-size: 1.25em;
+}
+
+p {
+    line-height: 1.75em;
+}
+
+.gallery { text-align: center; }
+.gallery img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    max-width: 96%;
+}
+
+img + img { margin-top: 7px; }
+
+/* back to top */
+.cd-top {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    /* image replacement properties */
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background: rgba(34, 170, 255, 0.9) url(img/cd-top-arrow.svg) no-repeat center 50%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top:hover {
+    background-color: rgba(34, 170, 255, 0.5);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+    /* the button becomes visible */
+    visibility: visible;
+    opacity: 0.9;
+}
+.no-touch .cd-top:hover {
+    background-color: #e86256;
+    opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+
+@media(max-width:768px) {
+    .banner {
+        background-attachment: scroll;
+        background-size: auto 100%;
+    }
+    #first-banner {
+        padding-top: 22%;
+    }
+    #lettering {
+        width: 90%;
+    }
+
+}
