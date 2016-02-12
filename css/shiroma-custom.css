@@ -378,14 +378,14 @@ body { webkit-tap-highlight-color: rgba(255,255,255,.2) }
 .x-point h2,
 .x-point h4 {
     font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-align: left; 
+    text-align: center; 
 }
 .x-point h3 {
     font-weight: bold;
     font-size: 300%;
     line-height: 200%;
     margin: 5px;
-    text-align: left;
+    text-align: center;
 }
 .x-point .title-may-wrap { line-height: 100%; margin-bottom: 1em }
 .x-point h4 { margin-bottom: 0.25em }
@@ -408,6 +408,10 @@ div.x-logo:hover {
     transition: all .4s ease-in-out;
 }
 
+#resume-pdf { text-align: center }
+
+.x-point-content { margin: 0px }
+
 @media(min-width:768px) {
     div.x-logo,
     div.x-logo:hover {
@@ -415,6 +419,15 @@ div.x-logo:hover {
         min-width: 420px;
         width: 40%;
     }
+    .x-point-content {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .x-point h3,
+    .x-point h4 {
+        text-align: left;
+    }
+    #resume-pdf { text-align: right }
 }
 
 /* custom backgrounds; icon changes whenever hover over whole card */
