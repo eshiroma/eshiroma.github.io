@@ -377,13 +377,17 @@ body { webkit-tap-highlight-color: rgba(255,255,255,.2) }
 .x-point h1
 .x-point h2,
 .x-point h4 {
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: left; 
 }
 .x-point h3 {
     font-weight: bold;
     font-size: 300%;
+    line-height: 200%;
     margin: 5px;
+    text-align: left;
 }
+.x-point .title-may-wrap { line-height: 100%; margin-bottom: 1em }
 .x-point h4 { margin-bottom: 0.25em }
 .x-point h4 + h4 { margin-bottom: 1em }
 
@@ -392,10 +396,6 @@ body { webkit-tap-highlight-color: rgba(255,255,255,.2) }
     height: 5em;
 }
 .x-point img { width: 70% }
-
-.x-title-wrap { height: 8em }
-
-h3.single-line { line-height: 200% } /* vertical centering */
 
 div.x-logo,
 div.x-logo:hover {
@@ -408,14 +408,34 @@ div.x-logo:hover {
     transition: all .4s ease-in-out;
 }
 
+@media(min-width:768px) {
+    div.x-logo,
+    div.x-logo:hover {
+        float: left;
+        min-width: 420px;
+        width: 40%;
+    }
+}
+
 /* custom backgrounds; icon changes whenever hover over whole card */
+/* Google full-time and Twitter small since in the future */
+#google-logo, .x-point:hover #google-logo, #twitter-logo, .x-point:hover #twitter-logo {
+    background-size: 175px;
+} 
+#google-logo, .x-point:hover #google-logo { background-image: url("../img/icons/google-color.png") }
+#twitter-logo, .x-point:hover #twitter-logo { background-image: url("../img/icons/twitter-color.png") }
+#old-google-logo, .x-point:hover #old-google-logo { background-image: url("../img/icons/old-google-color.png");}
 #cozi-logo, .x-point:hover #cozi-logo { background-image: url("../img/icons/cozi-color.png");}
-#google-logo, .x-point:hover #google-logo { background-image: url("../img/icons/google-color.png");}
+#cse-logo, .x-point:hover #cse-logo { background-image: url("../img/icons/cse-color.png");}
 #api-logo, .x-point:hover #api-logo { background-image: url("../img/icons/api-color.png");}
 
-@media (min-width: 1200px) {     /* no hover stuff on mobile */
+
+@media (min-width: 768px) {     /* no hover stuff on mobile */
     .x-point { color: #888 }
-    #cozi-logo { background-image: url("../img/icons/cozi-grey.png");}
     #google-logo { background-image: url("../img/icons/google-grey.png");}
+    #twitter-logo { background-image: url("../img/icons/twitter-grey.png");}
+    #old-google-logo { background-image: url("../img/icons/old-google-grey.png");}
+    #cozi-logo { background-image: url("../img/icons/cozi-grey.png");}
+    #cse-logo { background-image: url("../img/icons/cse-grey.png");}
     #api-logo { background-image: url("../img/icons/api-grey.png");
 }
