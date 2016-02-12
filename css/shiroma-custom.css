@@ -418,13 +418,24 @@ div.x-logo:hover {
 }
 
 /* custom backgrounds; icon changes whenever hover over whole card */
+/* Google full-time and Twitter small since in the future */
+#google-logo, .x-point:hover #google-logo, #twitter-logo, .x-point:hover #twitter-logo {
+    background-size: 175px;
+} 
+#google-logo, .x-point:hover #google-logo { background-image: url("../img/icons/google-color.png") }
+#twitter-logo, .x-point:hover #twitter-logo { background-image: url("../img/icons/twitter-color.png") }
+#old-google-logo, .x-point:hover #old-google-logo { background-image: url("../img/icons/old-google-color.png");}
 #cozi-logo, .x-point:hover #cozi-logo { background-image: url("../img/icons/cozi-color.png");}
-#google-logo, .x-point:hover #google-logo { background-image: url("../img/icons/google-color.png");}
+#cse-logo, .x-point:hover #cse-logo { background-image: url("../img/icons/cse-color.png");}
 #api-logo, .x-point:hover #api-logo { background-image: url("../img/icons/api-color.png");}
+
 
 @media (min-width: 768px) {     /* no hover stuff on mobile */
     .x-point { color: #888 }
-    #cozi-logo { background-image: url("../img/icons/cozi-grey.png");}
     #google-logo { background-image: url("../img/icons/google-grey.png");}
+    #twitter-logo { background-image: url("../img/icons/twitter-grey.png");}
+    #old-google-logo { background-image: url("../img/icons/old-google-grey.png");}
+    #cozi-logo { background-image: url("../img/icons/cozi-grey.png");}
+    #cse-logo { background-image: url("../img/icons/cse-grey.png");}
     #api-logo { background-image: url("../img/icons/api-grey.png");
 }
