@@ -424,7 +424,7 @@ div.x-logo:hover {
 } 
 #google-logo, .x-point:hover #google-logo { background-image: url("../img/icons/google-color.png") }
 #twitter-logo, .x-point:hover #twitter-logo { background-image: url("../img/icons/twitter-color.png") }
-#adwords-logo, .x-point:hover #adwords-logo { background-image: url("../img/icons/google-adwords-color.png");}
+#adwords-logo, .x-point:hover #adwords-logo { background-image: url("../img/icons/twitter-color.png");}
 #cozi-logo, .x-point:hover #cozi-logo { background-image: url("../img/icons/cozi-color.png");}
 #cse-logo, .x-point:hover #cse-logo { background-image: url("../img/icons/cse-color.png");}
 #api-logo, .x-point:hover #api-logo { background-image: url("../img/icons/api-color.png");}
@@ -434,7 +434,7 @@ div.x-logo:hover {
     .x-point { color: #888 }
     #google-logo { background-image: url("../img/icons/google-grey.png");}
     #twitter-logo { background-image: url("../img/icons/twitter-grey.png");}
-    #adwords-logo { background-image: url("../img/icons/google-adwords-grey.png");}
+    #adwords-logo { background-image: url("../img/icons/twitter-grey.png");}
     #cozi-logo { background-image: url("../img/icons/cozi-grey.png");}
     #cse-logo { background-image: url("../img/icons/cse-grey.png");}
     #api-logo { background-image: url("../img/icons/api-grey.png");
