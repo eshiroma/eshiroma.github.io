@@ -46,6 +46,10 @@ a:focus {
 
 .light { font-weight: 400 }
 
+#navbar-collapse {
+    display: none;
+}
+
 .navbar-custom {
     margin-bottom: 0;
     font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -112,7 +116,6 @@ footer {
     background: url(../img/bg/intro-bg.jpg) no-repeat bottom center scroll;
 }
 footer {
-    font-family: 'Playfair Display', 'Georgia', serif;
     background: url(../img/bg/intro-bg.jpg) no-repeat scroll;
     padding: 25px 0 1px 0;
     margin-bottom: 0px;

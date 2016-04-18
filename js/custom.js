@@ -5,7 +5,7 @@
  */
 
 
-// jQuery to collapse the navbar on scroll
+// jQuery to reveal the navbar on scroll
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
@@ -15,24 +15,29 @@ $(window).scroll(function() {
 });
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
+// close nav before scrol
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
+        var scrollMs = 1300;
         var $anchor = $(this);
+        if (!$anchor.hasClass('navbar-brand')) {
+            toggleNavMenu();
+        }
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
-        }, 1300, 'easeInOutExpo');
+        }, scrollMs, 'easeInOutExpo');
         event.preventDefault();
     });
 });
 
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    $('.navbar-toggle:visible').click();
-});
+function toggleNavMenu() {
+    var navCollapse = document.getElementById('navbar-collapse');
+    var isOpen = navCollapse.style.display === "block";
+    navCollapse.style.display = isOpen ? "none" : "block";
+}
 
-
-// load all the functions!
-function init() {}
+// Toggle visibility of the responsive menu (mobile)
+$('.navbar-toggle').click(toggleNavMenu);
 
 // anonymous functions for initiating lightbox
 document.getElementById('gallery-links').onclick = function (event) {
@@ -43,3 +48,6 @@ document.getElementById('gallery-links').onclick = function (event) {
         links = this.getElementsByTagName('a');
     blueimp.Gallery(links, options);
 };
+
+// load all the functions!
+function init() {}
