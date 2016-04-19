@@ -1,3 +1,11 @@
+/* MEDIA QUERY SIZES
+ * 1200px (992px) 768px (480px) (320px)
+ *
+ * COLORS
+ * #16a095 (darker teal)
+ * #3adccd (bright teal)
+ */
+
 body {
     width: 100%;
     height: 100%;
@@ -19,16 +27,13 @@ h1, h2, h3, h4, h5, h6 {
 h2 { font-size: 400% }
 
 p {
-    margin: 0 0 25px;
-    font-size: 18px;
+    margin: 0 0 35px;
+    font-size: 20px;
     line-height: 1.5;
 }
-
-@media(min-width:767px) {
+@media(max-width:767px) {
     p {
-        margin: 0 0 35px;
-        font-size: 20px;
-        line-height: 1.6;
+        margin: 0 0 25px;
     }
 }
 
@@ -46,8 +51,17 @@ a:focus {
 
 .light { font-weight: 400 }
 
+/* NAVBAR STUFF ************************************************/
+
 #navbar-collapse {
-    display: none;
+    display: block;
+}
+
+/* hide navbar links for mobile */
+@media(max-width: 767px) {
+    .hidden-links .navbar-link {
+        display: none;
+    }
 }
 
 .navbar-custom {
@@ -58,16 +72,16 @@ a:focus {
 }
 
 .navbar-custom .navbar-brand { font-weight: 500 }
-
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
     color: #fff;
 }
 
-.navbar-toggle i { color: #fff }
-
-.navbar-custom a { color: #fff }
+.navbar-toggle i,
+.navbar-custom a {
+    color: #fff
+}
 
 /* selected nav area text "glow" */
 .navbar-custom .nav li.active,
@@ -217,29 +231,24 @@ footer a { color: #fff }
         -webkit-transform: scale(1);
         transform: scale(1);
     }
-
     50% {
         -webkit-transform: scale(1.3);
         transform: scale(1.3);
     }
-
     100% {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
 }
-
 @-moz-keyframes pulse {    
     0 {
         -moz-transform: scale(1);
         transform: scale(1);
     }
-
     50% {
         -moz-transform: scale(1.3);
         transform: scale(1.3);
     }
-
     100% {
         -moz-transform: scale(1);
         transform: scale(1);
