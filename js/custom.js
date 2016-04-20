@@ -16,13 +16,12 @@ $(window).scroll(function() {
 });
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
-// close nav before scrol
 $(function() {
     $("a.page-scroll").bind("click", function(event) {
         var scrollMs = 1300;
         var $anchor = $(this);
 
-        // toggle nav menu visibility for nav links (only applies to mobile)
+        // close nav dropdown if on mobile
         if ($anchor.hasClass("navbar-link")) {
             toggleNavMenu();
         }

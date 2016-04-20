@@ -53,13 +53,12 @@ a:focus {
 
 /* NAVBAR STUFF ************************************************/
 
-#navbar-collapse {
-    display: block;
-}
-
 /* hide navbar links for mobile */
 @media(max-width: 767px) {
-    .hidden-links .navbar-link {
+    #navbar-collapse {
+        display: block;
+    }
+    #navbar-collapse.hidden-links {
         display: none;
     }
 }
@@ -125,7 +124,7 @@ footer {
 .intro {
     display: table;
     height: 100%;/*auto;*/
-    padding: 100px 0;
+    padding: 0px;
     text-align: center;
     background: url(../img/bg/intro-bg.jpg) no-repeat bottom center scroll;
 }
