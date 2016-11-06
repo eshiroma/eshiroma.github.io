@@ -442,10 +442,6 @@ div.x-logo:hover {
 }
 
 /* custom backgrounds; icon changes whenever hover over whole card */
-/* Google full-time and Twitter small since in the future */
-#google-logo, .x-point:hover #google-logo {
-    background-size: 175px;
-} 
 #google-logo, .x-point:hover #google-logo { background-image: url("../img/icons/google-color.png") }
 #twitter-logo, .x-point:hover #twitter-logo { background-image: url("../img/icons/twitter-color.png") }
 #adwords-logo, .x-point:hover #adwords-logo { background-image: url("../img/icons/adwords-color.png");}
